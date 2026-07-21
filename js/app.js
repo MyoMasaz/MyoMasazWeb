@@ -28,16 +28,7 @@ async function initialize(language){
 
     renderMessengers(config);
 
-    setupLanguageSwitcher(language);
-
-    // Setup location button scroll
-    const locationButton = document.querySelector(".header-location-btn");
-    if (locationButton) {
-        locationButton.addEventListener("click", (event) => {
-            event.preventDefault();
-            document.getElementById("location").scrollIntoView({ behavior: "smooth" });
-        });
-    }
+    updateLanguageSwitcher(language);
 }
 
 const languages = {
@@ -59,13 +50,10 @@ const languages = {
     }
 };
 
-function setupLanguageSwitcher(language){
+function updateLanguageSwitcher(language){
 
     const switcher =
         document.getElementById("language-switcher");
-
-    const toggle =
-        switcher.querySelector(".language-toggle");
 
     const current =
         switcher.querySelector(".language-current");
@@ -110,49 +98,47 @@ function setupLanguageSwitcher(language){
                 }
             );
         });
+}
 
-    toggle.addEventListener(
+function setupGlobalEventListeners() {
+    document.addEventListener(
         "click",
-        () => {
+        e => {
+            const switcher = document.getElementById("language-switcher");
+            if (!switcher) return;
 
-            const isOpen =
-                switcher.classList.toggle("is-open");
+            // Close switcher if clicking outside
+            if (!switcher.contains(e.target)) {
+                switcher.classList.remove("is-open");
+                const toggle = switcher.querySelector(".language-toggle");
+                if (toggle) {
+                    toggle.setAttribute("aria-expanded", "false");
+                }
+            }
 
-            toggle.setAttribute(
-                "aria-expanded",
-                isOpen ? "true" : "false"
-            );
+            // Handle language toggle click
+            const toggle = e.target.closest(".language-toggle");
+            if (toggle && switcher.contains(toggle)) {
+                const isOpen = switcher.classList.toggle("is-open");
+                toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+            }
+
+            // Handle location button scroll
+            const locationButton = e.target.closest(".header-location-btn");
+            if (locationButton) {
+                e.preventDefault();
+                document.getElementById("location").scrollIntoView({ behavior: "smooth" });
+            }
         }
     );
 }
-
-document.addEventListener(
-    "click",
-    e => {
-
-        const switcher =
-            document.getElementById("language-switcher");
-
-        if (
-            !switcher
-            || switcher.contains(e.target)
-        ){
-            return;
-        }
-
-        switcher.classList.remove("is-open");
-
-        const toggle =
-            switcher.querySelector(".language-toggle");
-
-        if (toggle){
-            toggle.setAttribute("aria-expanded", "false");
-        }
-    }
-);
 
 const language =
     localStorage.getItem("lang")
     || "en";
 
+// Run one-time setups
+setupGlobalEventListeners();
+
+// Initial load
 initialize(language);
