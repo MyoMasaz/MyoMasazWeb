@@ -600,30 +600,37 @@ function renderLocation(config, content){
 
 function renderFooter(config, content){
 
-    const business = config.business || {};
-
-    const addressHTML = business.address ? `
-        <div class="footer-grid">
-            <div>
-                <h3>${content.footer.address}</h3>
-                <p>${business.address}</p>
-            </div>` : '';
-
-    const infoHTML = business.ico ? `
-            <div>
-                <h3>${content.footer.businessInfo}</h3>
-                <p>IČO: ${business.ico}</p>
-            </div>` : '';
-
-    const contactHTML = (business.phone || business.email) ? `
-            <div>
-                <h3>${content.footer.contact}</h3>
-                ${business.phone ? `<p>${business.phone}</p>` : ''}
-                ${business.email ? `<p>${business.email}</p>` : ''}
-            </div>` : '';
-
     document.getElementById("footer").innerHTML = `
-        <div class="footer-grid">${addressHTML}${infoHTML}${contactHTML}</div>`;
+        <div class="footer-grid">
+
+            <div>
+
+                <h3>${content.footer.address}</h3>
+
+                <p>${config.business.address}</p>
+
+            </div>
+
+            <div>
+
+                <h3>${content.footer.businessInfo}</h3>
+
+                <p>IČO: ${config.business.ico}</p>
+
+            </div>
+
+            <div>
+
+                <h3>${content.footer.contact}</h3>
+
+                <p>${config.business.phone}</p>
+
+                <p>${config.business.email}</p>
+
+            </div>
+
+        </div>
+    `;
 }
 
 function renderMessengers(config, content){
