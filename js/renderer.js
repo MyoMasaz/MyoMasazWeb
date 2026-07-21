@@ -19,53 +19,8 @@ function renderHeader(config, content){
                         aria-expanded="false">
                         <span class="language-current"></span>
                     </button>
-
-                    <div
-                        class="language-menu"
-                        role="listbox">
-                        <button
-                            class="language-option"
-                            type="button"
-                            data-lang="en"
-                            role="option">
-                            <img
-                                src="https://flagcdn.com/w40/gb.png"
-                                alt="">
-                            <span>EN</span>
-                        </button>
-
-                        <button
-                            class="language-option"
-                            type="button"
-                            data-lang="cz"
-                            role="option">
-                            <img
-                                src="https://flagcdn.com/w40/cz.png"
-                                alt="">
-                            <span>CZ</span>
-                        </button>
-
-                        <button
-                            class="language-option"
-                            type="button"
-                            data-lang="ru"
-                            role="option">
-                            <img
-                                src="https://flagcdn.com/w40/ru.png"
-                                alt="">
-                            <span>RU</span>
-                        </button>
-
-                        <button
-                            class="language-option"
-                            type="button"
-                            data-lang="ua"
-                            role="option">
-                            <img
-                                src="https://flagcdn.com/w40/ua.png"
-                                alt="">
-                            <span>UA</span>
-                        </button>
+                    <div class="language-menu" role="listbox">
+                        <!-- Language options will be rendered here by JavaScript -->
                     </div>
                 </div>
                 

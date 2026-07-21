@@ -10,6 +10,8 @@ async function initialize(language){
 
     renderHeader(config, content);
 
+    renderLanguageSwitcher(language);
+
     renderHero(config, content);
 
     renderServices(config, content);
@@ -27,8 +29,6 @@ async function initialize(language){
     renderFooter(config, content);
 
     renderMessengers(config);
-
-    updateLanguageSwitcher(language);
 }
 
 const languages = {
@@ -50,10 +50,42 @@ const languages = {
     }
 };
 
-function updateLanguageSwitcher(language){
+function renderLanguageSwitcher(language) {
+    const switcher = document.getElementById("language-switcher");
+    if (!switcher) return;
+
+    const menu = switcher.querySelector(".language-menu");
+    if (!menu) return;
+
+    const optionsHTML = Object.keys(languages)
+        .map(langKey => {
+            const lang = languages[langKey];
+            return `
+                <button
+                    class="language-option"
+                    type="button"
+                    data-lang="${langKey}"
+                    role="option">
+                    <img
+                        src="${lang.flag}"
+                        alt="">
+                    <span>${lang.label}</span>
+                </button>
+            `;
+        })
+        .join("");
+
+    menu.innerHTML = optionsHTML;
+
+    updateLanguageSwitcherUI(language);
+}
+
+function updateLanguageSwitcherUI(language){
 
     const switcher =
         document.getElementById("language-switcher");
+
+    if (!switcher) return;
 
     const current =
         switcher.querySelector(".language-current");
@@ -61,7 +93,7 @@ function updateLanguageSwitcher(language){
     const selected =
         languages[language] || languages.en;
 
-    current.innerHTML = `
+    if (current) current.innerHTML = `
         <img
             src="${selected.flag}"
             alt="">
@@ -83,19 +115,6 @@ function updateLanguageSwitcher(language){
             option.setAttribute(
                 "aria-selected",
                 isSelected ? "true" : "false"
-            );
-
-            option.addEventListener(
-                "click",
-                () => {
-
-                    localStorage.setItem(
-                        "lang",
-                        option.dataset.lang
-                    );
-
-                    initialize(option.dataset.lang);
-                }
             );
         });
 }
@@ -128,6 +147,18 @@ function setupGlobalEventListeners() {
             if (locationButton) {
                 e.preventDefault();
                 document.getElementById("location").scrollIntoView({ behavior: "smooth" });
+            }
+
+            // Handle language option click
+            const langOption = e.target.closest(".language-option");
+            if (langOption && switcher.contains(langOption)) {
+                const lang = langOption.dataset.lang;
+                if (lang) {
+                    // Prevent the new listener from catching the same click
+                    e.stopPropagation();
+                    localStorage.setItem("lang", lang);
+                    initialize(lang);
+                }
             }
         }
     );
