@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "title": "Masážní studio Harmony"
+  },
+
+  "ui": {
+    "call": "Zavolat",
+    "book": "Objednat",
+    "bookNow": "Objednat termín",
+    "details": "Podrobnosti",
+
+    "units": {
+      "minute": "min",
+      "currency": "Kč"
+    }
+  },
+
+  "hero": {
+    "title": "Profesionální masážní péče",
+    "subtitle": "Uvolněte se, zregenerujte a obnovte svou pohodu."
+  },
+
+  "services": {
+    "title": "Masážní služby",
+
+    "service-1": {
+      "title": "Služba 1",
+      "description": "Zástupný popis masážní služby 1.",
+      "details": "Delší zástupný popis masážní služby 1. Zde můžete vysvětlit, pro koho je masáž vhodná, co ošetření zahrnuje a jaký pocit si klient odnese."
+    },
+
+    "service-2": {
+      "title": "Služba 2",
+      "description": "Zástupný popis masážní služby 2.",
+      "details": "Delší zástupný popis masážní služby 2. Text může popsat intenzitu tlaku, zaměřené oblasti, přípravu a klidný průběh ošetření."
+    },
+
+    "service-3": {
+      "title": "Služba 3",
+      "description": "Zástupný popis masážní služby 3.",
+      "details": "Delší zástupný popis masážní služby 3. Doplňte informace o technice, délce masáže a možnosti přizpůsobení individuálním potřebám."
+    },
+
+    "service-4": {
+      "title": "Služba 4",
+      "description": "Zástupný popis masážní služby 4.",
+      "details": "Delší zástupný popis masážní služby 4. Tento text může zdůraznit přínosy, pohodlí během ošetření a doporučení k objednání."
+    },
+
+    "service-5": {
+      "title": "Služba 5",
+      "description": "Zástupný popis masážní služby 5.",
+      "details": "Delší zástupný popis masážní služby 5. Použijte ho pro podrobnější vysvětlení stylu masáže, ošetřovaných oblastí a relaxačních cílů."
+    },
+
+    "service-6": {
+      "title": "Služba 6",
+      "description": "Zástupný popis masážní služby 6.",
+      "details": "Delší zástupný popis masážní služby 6. Uveďte, kdy je toto ošetření vhodné a jak terapeutka přizpůsobuje průběh sezení."
+    },
+
+    "service-7": {
+      "title": "Služba 7",
+      "description": "Zástupný popis masážní služby 7.",
+      "details": "Delší zástupný popis masážní služby 7. Hodí se pro prémiovou nebo prodlouženou službu s detailnějším popisem celého zážitku."
+    }
+  },
+
+  "testimonials": {
+    "title": "Hodnocení klientů",
+
+    "items": [
+      {
+        "review": "Úžasná relaxační masáž a příjemná atmosféra.",
+        "score": 5
+      },
+      {
+        "review": "Profesionální přístup a výborná péče.",
+        "score": 5
+      },
+      {
+        "review": "Vždy odcházím odpočatá a osvěžená.",
+        "score": 5
+      },
+      {
+        "review": "Klidné místo a velmi pozorná péče od začátku do konce.",
+        "score": 5
+      }
+    ]
+  },
+
+  "faq": {
+    "title": "Často kladené otázky",
+
+    "items": [
+      {
+        "question": "Je nutné se objednat předem?",
+        "answer": "Objednání předem doporučujeme."
+      },
+      {
+        "question": "Lze upravit tlak při masáži?",
+        "answer": "Ano, každé ošetření je přizpůsobeno individuálně."
+      },
+      {
+        "question": "Co si mám obléct?",
+        "answer": "Doporučujeme pohodlné oblečení."
+      }
+    ]
+  },
+
+  "about": {
+    "title": "O vaší terapeutce",
+
+    "text": "Jmenuji se Jana a poskytuji individuální masážní ošetření v klidném a příjemném prostředí.",
+
+    "text2": "Každé sezení je přizpůsobeno individuálním potřebám a cílům."
+  },
+
+  "location": {
+    "title": "Lokace",
+    "whereToFindUsTitle": "Kde nás najdete"
+  },
+
+  "footer": {
+    "address": "Adresa",
+    "businessInfo": "Informace o podnikání",
+    "contact": "Kontakt"
+  }
+}

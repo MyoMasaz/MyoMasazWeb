@@ -1,0 +1,152 @@
+{
+  "business": {
+    "name": "Harmony Massage Studio",
+
+    "phone": "+420123456789",
+
+    "email": "info@example.cz",
+
+    "bookingUrl": "https://booking.example.com",
+
+    "telegramUrl": "https://t.me/massage_prague",
+
+    "whatsappUrl": "https://wa.me/420123456789",
+
+    "viberUrl": "viber://chat?number=%2B420123456789",
+
+    "address": "Example Street 15, Prague",
+
+    "ico": "12345678"
+  },
+
+  "hero": {
+    "image": "assets/images/hero.jpg"
+  },
+
+  "about": {
+    "image": "assets/images/therapist.jpg"
+  },
+
+  "location": {
+    "mapUrl": "https://www.google.com/maps?q=50.0755,14.4378&z=15&output=embed"
+  },
+
+  "services": [
+    {
+      "id": "service-1",
+
+      "image": "assets/images/service-1.jpg",
+
+      "photos": [
+        "assets/images/service-1.jpg",
+        "assets/images/hero.jpg",
+        "assets/images/therapist.jpg"
+      ],
+
+      "durationMinutes": 60,
+
+      "price": 1200
+    },
+    {
+      "id": "service-2",
+
+      "image": "assets/images/service-2.jpg",
+
+      "photos": [
+        "assets/images/service-2.jpg",
+        "assets/images/hero.jpg",
+        "assets/images/therapist.jpg"
+      ],
+
+      "durationMinutes": 90,
+
+      "price": 1600
+    },
+    {
+      "id": "service-3",
+
+      "image": "assets/images/service-3.jpg",
+
+      "photos": [
+        "assets/images/service-3.jpg",
+        "assets/images/hero.jpg",
+        "assets/images/therapist.jpg"
+      ],
+
+      "durationMinutes": 45,
+
+      "price": 900
+    },
+    {
+      "id": "service-4",
+
+      "image": "assets/images/service-4.jpg",
+
+      "photos": [
+        "assets/images/service-4.jpg",
+        "assets/images/hero.jpg",
+        "assets/images/therapist.jpg"
+      ],
+
+      "durationMinutes": 60,
+
+      "price": 1200
+    },
+    {
+      "id": "service-5",
+
+      "image": "assets/images/service-5.jpg",
+
+      "photos": [
+        "assets/images/service-5.jpg",
+        "assets/images/hero.jpg",
+        "assets/images/therapist.jpg"
+      ],
+
+      "durationMinutes": 75,
+
+      "price": 1400
+    },
+    {
+      "id": "service-6",
+
+      "image": "assets/images/service-6.jpg",
+
+      "photos": [
+        "assets/images/service-6.jpg",
+        "assets/images/hero.jpg",
+        "assets/images/therapist.jpg"
+      ],
+
+      "durationMinutes": 90,
+
+      "price": 1600
+    },
+    {
+      "id": "service-7",
+
+      "image": "assets/images/service-7.jpg",
+
+      "photos": [
+        "assets/images/service-7.jpg",
+        "assets/images/hero.jpg",
+        "assets/images/therapist.jpg"
+      ],
+
+      "durationMinutes": 120,
+
+      "price": 2000
+    }
+  ],
+
+  "certificates": [
+    {
+      "id": "certificate-1",
+      "image": "assets/images/certificate-1.jpg"
+    },
+    {
+      "id": "certificate-2",
+      "image": "assets/images/certificate-2.jpg"
+    }
+  ]
+}
