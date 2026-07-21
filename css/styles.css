@@ -746,7 +746,58 @@ footer p{
     width:28px;
 }
 
+/* Mobile Bottom Bar */
+#mobile-bottom-bar {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+
+    background: rgba(255, 250, 241, .95);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--border);
+    
+    padding: 10px 10px;
+    gap: 10px;
+    
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+#mobile-bottom-bar .btn {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    flex-basis: 0;
+    box-shadow: none;
+    gap: 8px;
+}
+
+#mobile-bottom-bar .mobile-messenger-links {
+    display: flex;
+    gap: 10px;
+}
+
+#mobile-bottom-bar .mobile-messenger-links a {
+    padding: 10px;
+}
+
+#mobile-bottom-bar .mobile-messenger-links img {
+    width: 26px;
+    height: 26px;
+}
+
+#mobile-bottom-bar .btn-primary {
+    flex-grow: 1;
+}
+
 @media(max-width:900px){
+    .floating-contact {
+        display: none; /* Hide floating buttons on mobile */
+    }
+
     .header-actions {
         gap: 8px;
     }
@@ -756,6 +807,16 @@ footer p{
     .header-location-btn .location-icon {
         margin-right: 0;
     }
+    .header-action-btn {
+        display: none; /* Hide header buttons on mobile */
+    }
+    #mobile-bottom-bar {
+        display: flex; /* Show mobile bar */
+    }
+    body {
+        padding-bottom: 66px; /* Add space for the bottom bar */
+    }
+
     .hero{
         grid-template-columns:1fr;
     }

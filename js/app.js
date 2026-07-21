@@ -12,6 +12,8 @@ async function initialize(language){
 
     renderLanguageSwitcher(language);
 
+    renderMobileBottomBar(config, content);
+
     renderHero(config, content);
 
     renderServices(config, content);
@@ -28,7 +30,7 @@ async function initialize(language){
 
     renderFooter(config, content);
 
-    renderMessengers(config);
+    renderMessengers(config, content);
 }
 
 const languages = {

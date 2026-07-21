@@ -25,21 +25,21 @@ function renderHeader(config, content){
                 </div>
                 
                 <a
-                    class="btn btn-secondary header-location-btn"
+                    class="btn btn-secondary header-action-btn header-location-btn"
                     href="#location"
                     aria-label="${content.location.title}">
                     <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 5.1-5.2 10.7-6.4 11.9a.8.8 0 0 1-1.2 0C10.2 19.7 5 14.1 5 9a7 7 0 0 1 7-7Zm0 4a3 3 0 1 0 0 6a3 3 0 0 0 0-6Z"/></svg>
                 </a>
 
                 <a
-                    class="btn btn-secondary"
+                    class="btn btn-secondary header-action-btn"
                     href="tel:${config.business.phone}">
                     <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 2h3.2c.5 0 .9.3 1 .8l.8 3.9c.1.5-.1 1-.5 1.3L9.4 9.4a14.5 14.5 0 0 0 5.2 5.2l1.4-1.7c.3-.4.8-.6 1.3-.5l3.9.8c.5.1.8.5.8 1v3.2A1.6 1.6 0 0 1 20.4 19C10.8 19 5 13.2 5 3.6A1.6 1.6 0 0 1 6.6 2Z"/></svg>
                     ${config.business.phone}
                 </a>
 
                 <a
-                    class="btn btn-primary"
+                    class="btn btn-primary header-action-btn"
                     href="${config.business.bookingUrl}"
                     target="_blank">
                     <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h1V3a1 1 0 0 1 1-1Zm13 8H4v9a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-9Z"/></svg>
@@ -49,6 +49,48 @@ function renderHeader(config, content){
             </div>
 
         </div>
+    `;
+}
+
+function renderMobileBottomBar(config, content) {
+    document.getElementById("mobile-bottom-bar").innerHTML = `
+        <div class="mobile-messenger-links">
+            <a
+                class="btn btn-secondary"
+                href="${config.business.whatsappUrl}"
+                target="_blank"
+                aria-label="WhatsApp">
+                <img src="https://cdn.simpleicons.org/whatsapp/3f5131" alt="WhatsApp">
+            </a>
+            <a
+                class="btn btn-secondary"
+                href="${config.business.viberUrl}"
+                aria-label="Viber">
+                <img src="https://cdn.simpleicons.org/viber/3f5131" alt="Viber">
+            </a>
+        </div>
+
+        <a
+            class="btn btn-secondary"
+            href="#location"
+            aria-label="${content.location.title}">
+            <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 5.1-5.2 10.7-6.4 11.9a.8.8 0 0 1-1.2 0C10.2 19.7 5 14.1 5 9a7 7 0 0 1 7-7Zm0 4a3 3 0 1 0 0 6a3 3 0 0 0 0-6Z"/></svg>
+        </a>
+
+        <a
+            class="btn btn-secondary"
+            href="tel:${config.business.phone}"
+            aria-label="${content.ui.call}">
+            <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 2h3.2c.5 0 .9.3 1 .8l.8 3.9c.1.5-.1 1-.5 1.3L9.4 9.4a14.5 14.5 0 0 0 5.2 5.2l1.4-1.7c.3-.4.8-.6 1.3-.5l3.9.8c.5.1.8.5.8 1v3.2A1.6 1.6 0 0 1 20.4 19C10.8 19 5 13.2 5 3.6A1.6 1.6 0 0 1 6.6 2Z"/></svg>
+        </a>
+
+        <a
+            class="btn btn-primary"
+            href="${config.business.bookingUrl}"
+            target="_blank">
+            <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h1V3a1 1 0 0 1 1-1Zm13 8H4v9a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-9Z"/></svg>
+            ${content.ui.bookNow}
+        </a>
     `;
 }
 
@@ -591,11 +633,11 @@ function renderFooter(config, content){
     `;
 }
 
-function renderMessengers(config){
+function renderMessengers(config, content){
 
     document.getElementById(
         "floating-buttons"
-    ).innerHTML = `
+    ).innerHTML = /* html */`
         <div class="floating-contact">
 
             <a
