@@ -1,129 +1,145 @@
 {
   "meta": {
-    "title": "Masážní studio Harmony"
+    "title": "MyoMasage - Профессиональная массажная студия"
   },
 
   "ui": {
-    "call": "Zavolat",
-    "book": "Objednat",
-    "bookNow": "Objednat termín",
-    "details": "Podrobnosti",
+    "call": "Позвонить",
+    "book": "Записаться",
+    "bookNow": "Записаться на прием",
+    "details": "Подробнее",
 
     "units": {
-      "minute": "min",
-      "currency": "Kč"
+      "minute": "мин",
+      "currency": "CZK"
     }
   },
 
   "hero": {
-    "title": "Profesionální masážní péče",
-    "subtitle": "Uvolněte se, zregenerujte a obnovte svou pohodu."
+    "title": "MyoMasaz - Профессиональный массажный уход",
+    "subtitle": "Расслабьтесь, восстановитесь и верните себе хорошее самочувствие."
   },
 
   "services": {
-    "title": "Masážní služby",
+    "title": "Массажные услуги",
 
     "service-1": {
-      "title": "Služba 1",
-      "description": "Zástupný popis masážní služby 1.",
-      "details": "Delší zástupný popis masážní služby 1. Zde můžete vysvětlit, pro koho je masáž vhodná, co ošetření zahrnuje a jaký pocit si klient odnese."
+      "title": "Услуга 1",
+      "description": "Примерное описание для массажной услуги 1.",
+      "details": "Более длинное примерное описание для массажной услуги 1. Используйте это пространство, чтобы объяснить, для кого лучше всего подходит массаж, что включает в себя сеанс и какого результата клиенты могут ожидать после процедуры."
     },
 
     "service-2": {
-      "title": "Služba 2",
-      "description": "Zástupný popis masážní služby 2.",
-      "details": "Delší zástupný popis masážní služby 2. Text může popsat intenzitu tlaku, zaměřené oblasti, přípravu a klidný průběh ošetření."
+      "title": "Услуга 2",
+      "description": "Примерное описание для массажной услуги 2.",
+      "details": "Более длинное примерное описание для массажной услуги 2. Здесь можно описать уровень давления, зоны фокуса, подготовку и спокойный ритм сеанса."
     },
 
     "service-3": {
-      "title": "Služba 3",
-      "description": "Zástupný popis masážní služby 3.",
-      "details": "Delší zástupný popis masážní služby 3. Doplňte informace o technice, délce masáže a možnosti přizpůsobení individuálním potřebám."
+      "title": "Услуга 3",
+      "description": "Примерное описание для массажной услуги 3.",
+      "details": "Более длинное примерное описание для массажной услуги 3. Добавьте детали о технике массажа, ожидаемой продолжительности и о том, как процедуру можно адаптировать к индивидуальным потребностям."
     },
 
     "service-4": {
-      "title": "Služba 4",
-      "description": "Zástupný popis masážní služby 4.",
-      "details": "Delší zástupný popis masážní služby 4. Tento text může zdůraznit přínosy, pohodlí během ošetření a doporučení k objednání."
+      "title": "Услуга 4",
+      "description": "Примерное описание для массажной услуги 4.",
+      "details": "Более длинное примерное описание для массажной услуги 4. Этот текст может подчеркнуть преимущества, комфорт во время процедуры и рекомендации по записи."
     },
 
     "service-5": {
-      "title": "Služba 5",
-      "description": "Zástupný popis masážní služby 5.",
-      "details": "Delší zástupný popis masážní služby 5. Použijte ho pro podrobnější vysvětlení stylu masáže, ošetřovaných oblastí a relaxačních cílů."
+      "title": "Услуга 5",
+      "description": "Примерное описание для массажной услуги 5.",
+      "details": "Более длинное примерное описание для массажной услуги 5. Используйте его для более полного объяснения стиля массажа, областей тела и общих целей релаксации."
     },
 
     "service-6": {
-      "title": "Služba 6",
-      "description": "Zástupný popis masážní služby 6.",
-      "details": "Delší zástupný popis masážní služby 6. Uveďte, kdy je toto ošetření vhodné a jak terapeutka přizpůsobuje průběh sezení."
+      "title": "Услуга 6",
+      "description": "Примерное описание для массажной услуги 6.",
+      "details": "Более длинное примерное описание для массажной услуги 6. Укажите, когда рекомендуется эта процедура и как терапевт адаптирует сеанс."
     },
 
     "service-7": {
-      "title": "Služba 7",
-      "description": "Zástupný popis masážní služby 7.",
-      "details": "Delší zástupný popis masážní služby 7. Hodí se pro prémiovou nebo prodlouženou službu s detailnějším popisem celého zážitku."
+      "title": "Услуга 7",
+      "description": "Примерное описание для массажной услуги 7.",
+      "details": "Более длинное примерное описание для массажной услуги 7. Это можно использовать для премиальной или расширенной услуги с более подробным описанием всего опыта."
     }
   },
 
+  "certificates": {
+    "title": "Сертификаты",
+    "issued": "Выдан:",
+    "items": [
+      {
+        "id": "certificate-1",
+        "title": "Продвинутые техники массажа",
+        "date": "[Год]"
+      },
+      {
+        "id": "certificate-2",
+        "title": "Анатомия и физиология",
+        "date": "[Год]"
+      }
+    ]
+  },
+
   "testimonials": {
-    "title": "Hodnocení klientů",
+    "title": "Отзывы клиентов",
 
     "items": [
       {
-        "review": "Úžasná relaxační masáž a příjemná atmosféra.",
+        "review": "Замечательный расслабляющий массаж и гостеприимная атмосфера.",
         "score": 5
       },
       {
-        "review": "Profesionální přístup a výborná péče.",
+        "review": "Профессиональный подход и отличный уход.",
         "score": 5
       },
       {
-        "review": "Vždy odcházím odpočatá a osvěžená.",
+        "review": "Я всегда ухожу отдохнувшей.",
         "score": 5
       },
       {
-        "review": "Klidné místo a velmi pozorná péče od začátku do konce.",
+        "review": "Спокойное место с внимательным отношением от начала до конца.",
         "score": 5
       }
     ]
   },
 
   "faq": {
-    "title": "Často kladené otázky",
+    "title": "Часто задаваемые вопросы",
 
     "items": [
       {
-        "question": "Je nutné se objednat předem?",
-        "answer": "Objednání předem doporučujeme."
+        "question": "Нужно ли записываться заранее?",
+        "answer": "Рекомендуется предварительная запись."
       },
       {
-        "question": "Lze upravit tlak při masáži?",
-        "answer": "Ano, každé ošetření je přizpůsobeno individuálně."
+        "question": "Можно ли регулировать давление массажа?",
+        "answer": "Да, каждая процедура персонализирована."
       },
       {
-        "question": "Co si mám obléct?",
-        "answer": "Doporučujeme pohodlné oblečení."
+        "question": "Что мне надеть?",
+        "answer": "Рекомендуется удобная одежда."
       }
     ]
   },
 
   "about": {
-    "title": "O vaší terapeutce",
-
-    "text": "Jmenuji se Jana a poskytuji individuální masážní ošetření v klidném a příjemném prostředí.",
-
-    "text2": "Každé sezení je přizpůsobeno individuálním potřebám a cílům."
+    "title": "О вашем терапевте",
+    "text": "Меня зовут Яна, и я предоставляю индивидуальные массажные процедуры в спокойной и гостеприимной обстановке.",
+    "text2": "Каждый сеанс адаптирован к индивидуальным потребностям и целям."
   },
 
   "location": {
-    "title": "Lokace",
-    "whereToFindUsTitle": "Kde nás najdete"
+    "title": "Местоположение",
+    "whereToFindUsTitle": "Где нас найти",
+    "hoursTitle": "Часы работы варьируются в зависимости от записей"
   },
 
   "footer": {
-    "address": "Adresa",
-    "businessInfo": "Informace o podnikání",
-    "contact": "Kontakt"
+    "address": "Адрес",
+    "businessInfo": "Информация о бизнесе",
+    "contact": "Контакт"
   }
 }
